@@ -14,22 +14,24 @@
 <body>
     <nav class="navbar">
         <div class="perfil">
-            <b><a href="#">Perfil</a></b>
+            <b><a href="#" onclick="cambiar_texto(this)">Perfil</a></b>
         </div>
         <div class="navbar-left">
             <ul>
-                <li><b><a href="#">Inicio</a></b></li>
-                <li><b><a href="#">Mi Perfil</a></b></li>
-                <li><b><a href="#">Encontrar Conexiones</a></b></li>
+                <li><b><a href="#" onclick="bienvenido()">Inicio</a></b></li>
+                <li><b><a href="#" onclick="cambiar_texto(this)">Mi Perfil</a></b></li>
+                <li><b><a href="#" onclick="cambiar_texto(this)">Encontrar Conexiones</a></b></li>
             </ul>
-            <button class="close"><b>Cerrar Sesión</b></button>
+            <button class="close" onclick="eliminar(this)"><b>Cerrar Sesión</b></button>
         </div>
     </nav>
     <div class="full">
         <div class="left-side">
             <div class="container">
-                <img class="profile-pic" src="img/killua.jpg" alt="foto_de_perfil">
-                <div class="top-side"></div>
+                <div class="top-side">
+                    <img class="profile-pic" src="img/killua.jpg" alt="foto_de_perfil"
+                    onmouseover="cambia_imagen(this)" onmouseout="regrese_imagen(this)">
+                </div>
                 <div class="bottom-side">
                     <div class="texto"> 
                         <h2 class="nombre">Linn Olsen</h2>
@@ -56,7 +58,7 @@
                 </div>
             </div>
         </div>
-        <div class="rigth-bar">
+        <div class="right-side">
             <div class="solicitudes">
                 <h2>Solicitudes de Conexiones (2)</h2>
                 <div class="solicitudes-1">
@@ -92,7 +94,7 @@
                 </div>
                 <div class="users">
                     <img src="https://bleedingcool.com/wp-content/uploads/2019/05/handsome-jack-borderlands-900x900.jpg" alt="handsome jack">
-                    <p>handsome jack</p>
+                    <p>Handsome Jack</p>
                 </div>
                 <div class="users">
                 <img src="https://images.cults3d.com/I2dPyuo10MgMHJ2thE0nWizYtRg=/516x516/filters:no_upscale()/https://fbi.cults3d.com/uploaders/18302378/illustration-file/0c27b0fe-b5e5-4256-91e9-87205c83ecb7/thumb1.jpg" alt="Moxxi">
