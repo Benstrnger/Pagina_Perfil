@@ -16,6 +16,10 @@
         <div class="perfil">
             <b><a href="#" onclick="cambiar_texto(this)">Perfil</a></b>
         </div>
+        <div class="buscador">
+            <input type="text" name="" id="buscador" placeholder="Buscar...">
+            <button onclick="busqueda()">Buscar</button>
+        </div>
         <div class="navbar-left">
             <ul>
                 <li><b><a href="#" onclick="bienvenido()">Inicio</a></b></li>
@@ -45,7 +49,7 @@
                             Apasionada por crear experiencias digitales hermosas y funcionales. Cuando no está codificando, disfruta explorando los fiordos noruegos y capturando la belleza de la naturaleza de fotografías. 
                         </p>
         
-                        <button class="edit-profile">⚙ Edit profile</button>
+                        <button class="edit-profile" onclick="editar_perfil()">⚙ Edit profile</button>
                     </div>
                 </div>
             </div>
@@ -106,6 +110,7 @@
                 </div>
             </div>
         </div>
+        <button onclick="cambiar_modo()">Dark Mode</button>
     </div>
     <script src="js/script.js"></script>
 </body>

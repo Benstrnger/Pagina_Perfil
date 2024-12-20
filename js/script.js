@@ -28,3 +28,39 @@ function cambia_imagen(elemento_img) {
 function regrese_imagen(elemento_img) {
     elemento_img.src = "img/killua.jpg"
 }
+
+function editar_perfil() {
+    let elemento_nombre = document.querySelector(".nombre");
+    let elemento_city = document.querySelector(".city");
+    let elemento_info = document.querySelector(".info");
+    let elemento_bio = document.querySelector(".bio");
+
+    elemento_nombre.innerText = "Killua Zoldyck"
+    elemento_city.innerText = "Montaña Kukuroo"
+    elemento_info.innerHTML = "Asesino Zoldyck <br> Cazador"
+    elemento_bio.innerText = "En un principio Killua se presenta como un personaje que parece similar a Gon, alegre, atrevido, y lleno de ideas maliciosas, aunque en el fondo resultan ser totalmente opuestos, siendo lo contradictorio a lo que cada uno aparenta"
+
+    // color: white;
+    elemento_nombre.style.color = "white";
+    // background-color: babyblue;
+    elemento_nombre.style.backgroundColor = "blue";
+
+}
+
+function busqueda() {
+    let input = document.querySelector("#buscador");
+    let valor = input.value;
+
+    alert("Estas buscando: "+valor)
+}
+
+function cambiar_modo() {
+    let target = document.querySelector(".solicitudes");
+
+    if(target.classList.contains("dark-mode")) {
+        target.classList.remove("dark-mode");
+    } else {
+        target.classList.add("dark-mode");
+    }
+
+}

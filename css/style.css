@@ -17,8 +17,12 @@
     justify-content: space-around;
 }
 
+.buscador {
+    border: none;
+}
+
 .perfil>b>a {
-    margin-left: 20px;
+    margin-left: 200px;
     font-size: 20px;
     font-family: "Lato", serif;
     text-decoration: none;
@@ -216,4 +220,10 @@ h3 {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+    font-style: italic;
 }
