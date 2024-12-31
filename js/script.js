@@ -41,9 +41,9 @@ function editar_perfil() {
     elemento_bio.innerText = "En un principio Killua se presenta como un personaje que parece similar a Gon, alegre, atrevido, y lleno de ideas maliciosas, aunque en el fondo resultan ser totalmente opuestos, siendo lo contradictorio a lo que cada uno aparenta"
 
     // color: white;
-    elemento_nombre.style.color = "white";
+    // elemento_nombre.style.color = "white";
     // background-color: babyblue;
-    elemento_nombre.style.backgroundColor = "blue";
+    // elemento_nombre.style.backgroundColor = "blue";
 
 }
 
@@ -63,4 +63,48 @@ function cambiar_modo() {
         target.classList.add("dark-mode");
     }
 
+}
+
+function aceptar(n) {
+    var soliN = document.querySelector("#solicitudes-n");
+    var contactN = document.querySelector("#contactos-n");
+    var eliminar1 = document.querySelector("#soli-1");
+    var eliminar2 = document.querySelector("#soli-2");
+
+    if (n == 1) {
+        eliminar1.remove()
+    } else {
+        eliminar2.remove()
+    }
+    // disminulle el numero de las solicitudes
+    var valor = parseInt(soliN.innerText);
+    valor --;
+
+    soliN.innerText = valor
+    // aumenta el numero de los contactos
+    var valor = parseInt(contactN.innerText); 
+    valor ++;
+
+    contactN.innerText = valor
+
+    
+}
+
+function rechazar(n) {
+    var soliN = document.querySelector("#solicitudes-n");
+    var eliminar1 = document.querySelector("#soli-1");
+    var eliminar2 = document.querySelector("#soli-2");
+
+    if (n == 1) {
+        eliminar1.remove()
+    } else {
+        eliminar2.remove()
+    }
+    // disminulle el numero de las solicitudes
+    var valor = parseInt(soliN.innerText);
+    valor --;
+
+    soliN.innerText = valor
+
+    eliminar.remove()
 }
